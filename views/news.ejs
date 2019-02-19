@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+    <meta charset = 'UTF-8'>        
+    <title></title>
+</head>
+<body>
+<%=userinfo%>
+<% include public/header.ejs%>
+ets循环渲染数据
+<ul>
+    <%for(var i=0;i<list.length;i++){%>
+        <li><%=list[i]%></li>
+
+    <%}%>
+</ul>
+</body>
+
+</html>

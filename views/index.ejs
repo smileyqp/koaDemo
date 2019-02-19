@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+    <meta charset = 'UTF-8'>        
+    <title></title>
+</head>
+<body>
+<%=userinfo%>
+<% include public/header.ejs%>
+<h2 class='title'>下一个h2中将数据渲染到前台</h2>
+<h2><%=title%></h2>
+这是一个ejs的模板引擎
+app.use(views('views',{
+    extension:'ejs'//应用ejs模板引擎;这种配置views中的文件结尾为ejs
+}));
+
+<h2><%-content%></h2>
+
+<h2>条件判断</h2>
+<%if(num>24){%>
+    大于24
+<%}else{%>
+    小于24
+<%}%>
+</body>
+
+</html>
